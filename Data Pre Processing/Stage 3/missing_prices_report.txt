@@ -1,0 +1,48 @@
+MISSING PRICE ANALYSIS (STAGE 3 MERGED DATASET)
+==============================================
+
+Total Rows: 61152
+Missing Price Rows: 3286
+Overall Price Missing Percentage: 5.37%
+
+--- MISSING PRICE BY YEAR ---
+ year  price  missing_percent
+ 2013    324             3.71
+ 2014    193             2.21
+ 2015    296             3.39
+ 2016    794             9.09
+ 2017    668             7.65
+ 2018    238             2.72
+ 2019    773             8.85
+
+--- MISSING PRICE BY VEGETABLE TYPE ---
+vegetable_type  price  missing_percent
+ ASH PLANTAINS    283             5.55
+LADIES FINGERS    277             5.44
+         LEEKS    277             5.44
+   SNAKE GOURD    276             5.42
+        CARROT    275             5.40
+      BEETROOT    274             5.38
+   GREEN BEANS    273             5.36
+      TOMATOES    272             5.34
+      BRINJALS    270             5.30
+       CABBAGE    270             5.30
+GREEN CHILLIES    270             5.30
+       PUMPKIN    269             5.28
+
+--- MISSING PRICE BY LOCATION ---
+       location  price  missing_percent
+        Badulla    564            12.91
+     Kurunegala    541            12.39
+Thambuththegama    534            12.23
+        Mathara    364             8.33
+      Kaluthara    303             6.94
+       Puttalam    299             6.85
+    Hambanthota    290             6.64
+   Anuradhapura     97             2.22
+    Nuwaraeliya     86             1.97
+        Meegoda     84             1.92
+       Dambulla     48             1.10
+   Embilipitiya     40             0.92
+        Colombo     24             0.55
+          Kandy     12             0.27

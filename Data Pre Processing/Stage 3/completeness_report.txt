@@ -1,0 +1,17 @@
+DATASET COMPLETENESS REPORT
+===========================
+
+File: C:\Users\Ranuga\Data Science Project\Data Pre Processing\Stage 3\Final_Merged_Dataset.csv
+Total Rows: 61152
+Expected Rows (7 years * 14 locations * 12 veggies * 52 weeks): 61152
+
+Locations found (14):
+Anuradhapura, Badulla, Colombo, Dambulla, Embilipitiya, Hambanthota, Kaluthara, Kandy, Kurunegala, Mathara, Meegoda, Nuwaraeliya, Puttalam, Thambuththegama
+
+Vegetables found (12):
+ASH PLANTAINS, BEETROOT, BRINJALS, CABBAGE, CARROT, GREEN BEANS, GREEN CHILLIES, LADIES FINGERS, LEEKS, PUMPKIN, SNAKE GOURD, TOMATOES
+
+Years found (7):
+2013, 2014, 2015, 2016, 2017, 2018, 2019
+
+VERIFICATION SUCCESS: Every single combination of Year, Location, and Vegetable Type has exactly 52 weeks.

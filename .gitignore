@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.vscode/
+.idea/
+
+# Data Science
+.ipynb_checkpoints
+.env
+
+# Logs
+*.log
+
+# Large CSVs (Optional: uncomment if you want to keep data out of Git)
+# *.csv

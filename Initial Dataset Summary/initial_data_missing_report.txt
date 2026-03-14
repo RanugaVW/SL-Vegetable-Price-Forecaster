@@ -1,0 +1,12 @@
+INITIAL DATASET MISSING PRICE ANALYSIS
+======================================
+
+Source File: weekly_vegetable_all_location HARTI - weekly.csv
+Total Metadata Rows: 14352
+
+--- MISSING PRICE METRICS ---
+Total Price Cells (52 weeks per row): 746,304
+Missing Price Cells: 196,310
+Overall Price Missing Percentage: 26.30%
+
+Note: This analysis focuses exclusively on the price columns (w1-w52).
