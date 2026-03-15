@@ -1,5 +1,7 @@
 # SL-Vegetable-Price-Forecaster
 
+**National Level Project:** This is a national-level project where all vegetable type data, locations, and prices are collected from HARTI (Horticultural and Agronomic Research and Training Institute).
+
 A Data Science project focused on forecasting weekly vegetable prices in Sri Lanka using historical market data and high-resolution weather variables.
 
 ## Project Overview
