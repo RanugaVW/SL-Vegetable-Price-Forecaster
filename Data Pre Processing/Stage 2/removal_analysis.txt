@@ -12,10 +12,10 @@ Year
 2010          13836        40560               34.11
 2013          10822        40560               26.68
 2017          10586        44616               23.73
-2018          10546        44616               23.64
-2011           9357        40560               23.07
+2018          10546        44616               23.64 V
+2011           9357        40560               23.07 ****
 2016           9043        44616               20.27
-2019           8622        44616               19.32
+2019           8622        44616               19.32  V
 2015           8180        44616               18.33
 2014           6213        40560               15.32
 2024           7416        49972               14.84
@@ -64,31 +64,31 @@ Hanguranketha              9319        22984               40.55
 Trincomalee                5243        13520               38.78
 Batticaloa                 4936        13520               36.51
 Ampara                     8088        22984               35.19
-Galenbindunuwewa           1259         4056               31.04
+Galenbindunuwewa           1259         4056               31.04 ****
 Gampaha                    7124        22984               31.00
 Monaragala                 6998        22984               30.45
 Polonnaruwa                6184        22984               26.91
 Keppetipola                6155        22984               26.78
-Matale                     1047         4056               25.81
+Matale                     1047         4056               25.81 ****
 Rathnapura                 5788        22984               25.18
 Dehiattakandiya            5647        22984               24.57
 Tissamaharama              5607        22984               24.40
 Galle                      5584        22984               24.30
 Nikaweratiya               5555        22984               24.17
-Bandarawela                 882         4056               21.75
-Badulla                    4975        22984               21.65
-Puttalam                   4684        22984               20.38
-Thambuththegama            4575        22984               19.91
-Hambanthota                4217        22984               18.35
-Anuradhapura               3878        22984               16.87
-Veyangoda                   670         4056               16.52
+Bandarawela                 882         4056               21.75 ****
+Badulla                    4975        22984               21.65 
+Puttalam                   4684        22984               20.38 
+Thambuththegama            4575        22984               19.91 
+Hambanthota                4217        22984               18.35 
+Anuradhapura               3878        22984               16.87 
+Veyangoda                   670         4056               16.52 ****
 Kurunegala                 3655        22984               15.90
 Kaluthara                  3466        22984               15.08
 Mathara                    2733        22984               11.89
 Meegoda                    2668        22984               11.61
-Kegalle                    1434        13520               10.61
-Dambulla                   2005        22984                8.72
-Kandy                      1971        22984                8.58
-Nuwaraeliya                1854        22984                8.07
-Embilipitiya               1710        22984                7.44
-Colombo                    1314        22932                5.73
+Kegalle                    1434        13520               10.61 ****
+Dambulla                   2005        22984                8.72 
+Kandy                      1971        22984                8.58 
+Nuwaraeliya                1854        22984                8.07 
+Embilipitiya               1710        22984                7.44 
+Colombo                    1314        22932                5.73 
