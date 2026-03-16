@@ -49,6 +49,3 @@ This project aims to build a robust predictive model that estimates the weekly p
 
 All scripts use **relative paths**, ensuring the project is portable. Simply clone the repository and run scripts from their respective directories or the root.
 
-```bash
-python "Data Pre Processing/Stage 3/merge_weather_vegetables.py"
-```
