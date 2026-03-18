@@ -8,20 +8,44 @@ A Data Science project focused on forecasting weekly vegetable prices in Sri Lan
 
 This project aims to build a robust predictive model that estimates the weekly price of upcountry and low-country vegetables across 14 major economic centers in Sri Lanka. It leverages 7 years (2013-2019) of historical price data combined with meteorological data (Mean Temperature and Rain Sum) aggregated from the specific growing regions (origins) for each market.
 
+## Repository Structure
+
+```
+├── Raw Data/                     → Original HARTI CSV files
+├── 1. Initial Data Summary/      → Missingness analysis & reports
+├── 2. Weather Data/              → Weather fetching, geocoding & aggregation
+├── 3. Data Preprocessing/        → 7-step data transformation pipeline
+│   ├── 3.1 - Pivot to Long Format
+│   ├── 3.2 - Filtering and Cleanup
+│   ├── 3.3 - Weather Merge
+│   ├── 3.4 - External Data Merge
+│   ├── 3.5 - Producer Price Processing
+│   ├── 3.6 - Missing Value Handling
+│   └── 3.7 - Combining Datasets
+├── 4. Data Visualization/        → EDA & analysis charts
+│   ├── 4.1 - Initial EDA
+│   ├── 4.2 - Farmer vs Retail Price Analysis
+│   └── 4.3 - Rain Lag Analysis
+└── 5. Model Building/            → 9-step modeling pipeline
+    ├── 5.1 - Baseline XGBoost Model
+    ├── 5.2 - Regional Weather Enrichment
+    ├── 5.3 - Economic-Seasonal Interactions
+    ├── 5.4 - Error Analysis
+    ├── 5.5 - Cyclical Time Encoding
+    ├── 5.6 - Dynamic Lag Selection
+    ├── 5.7 - Ensemble Model (Producer Prices)
+    ├── 5.8 - Retail Price Ensemble Models
+    └── 5.9 - Model Validation
+```
+
+Each sub-folder is organized by file type: `Scripts/`, `Outputs/`, `Reports/`, `Models/`, `Datasets/`, `Charts/`, `Notebooks/`.
+
 ## Current Progress
 
 - **Data Integration:** Historical price data (2008-2020) has been cleaned and filtered to a target window (2013-2019).
 - **Feature Engineering:** Integrated weather variables based on a custom "Origin Mapping Matrix" which maps markets to the specific districts where their vegetables are actually grown.
 - **Completeness:** Verified that the dataset contains exactly 52 weeks per year for every location and vegetable type (61,152 rows).
 - **Analysis:** Baseline missing price analysis completed (Initial: 26.3% missing, Current Merged: 5.37% missing).
-
-## Repository Structure
-
-- `Initial Dataset Summary/`: Preliminary analysis scripts and reports for raw data.
-- `Weather Data/`: Scripts for geocoding, fetching Open-Meteo historical data, and weekly aggregation.
-- `Data Pre Processing/`: The three-stage processing pipeline (Pivot -> Filter -> Merge).
-- `analyze_removals.py`: Analysis of data dropped during the filtering process.
-- `.gitignore`: Configured to exclude Python system files and cache.
 
 ## Challenges & Strategies
 
@@ -48,4 +72,3 @@ This project aims to build a robust predictive model that estimates the weekly p
 ## How to Run
 
 All scripts use **relative paths**, ensuring the project is portable. Simply clone the repository and run scripts from their respective directories or the root.
-
