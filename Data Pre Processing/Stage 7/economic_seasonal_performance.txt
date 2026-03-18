@@ -1,0 +1,28 @@
+XGBoost Economic-Seasonal Interaction Report (Stage 7)
+======================================================
+Output directed to Stage 6 for consolidation.
+
+Metrics:
+--------
+R2 Score: 0.8732
+Accuracy (1 - MAPE): 87.57%
+RMSE: 34.75
+
+Comparison vs Stage 6 (Regional Baseline):
+------------------------------------------
+Best Previous R2: 0.8732
+New Optimized R2: 0.8732
+Net Change: +0.0000
+
+Top 10 Feature Importances:
+---------------------------
+- price_lag_1: 0.3972
+- price_rolling_mean_4: 0.2330
+- price_lag_2: 0.2291
+- regional_rain_avg_lag_4: 0.0312
+- week_num: 0.0104
+- lanka_auto_diesel_price: 0.0091
+- regional_temp_avg: 0.0084
+- diesel_seasonal_interaction: 0.0075
+- diesel_seasonal_interaction_lag_1: 0.0063
+- regional_rain_avg: 0.0062

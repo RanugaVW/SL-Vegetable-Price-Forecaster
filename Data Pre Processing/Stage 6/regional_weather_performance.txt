@@ -1,0 +1,27 @@
+XGBoost Regional Weather Report (Stage 6)
+===========================================
+
+Metrics:
+--------
+R2 Score: 0.8732
+Accuracy (1 - MAPE): 87.05%
+RMSE: 34.74
+
+Comparison vs Stage 5 Baseline:
+-------------------------------
+Baseline Accuracy: 87.22%
+Regional Accuracy: 87.05%
+Net Change: -0.1718%
+
+Top 10 Feature Importances:
+---------------------------
+- price_lag_1: 0.4231
+- price_rolling_mean_4: 0.2685
+- price_lag_2: 0.1546
+- regional_rain_avg_lag_4: 0.0226
+- regional_rain_avg_lag_3: 0.0146
+- regional_temp_avg_lag_4: 0.0117
+- regional_temp_avg_lag_3: 0.0082
+- regional_temp_avg: 0.0078
+- lanka_auto_diesel_price: 0.0076
+- regional_rain_avg_lag_2: 0.0075

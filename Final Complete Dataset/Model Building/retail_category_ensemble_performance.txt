@@ -1,0 +1,18 @@
+Category-Based (Up/Low Country) Ensemble Report
+=================================================
+Target  : retail_price
+Design  : Simplest XGBoost + LightGBM (50/50)
+Grouping: veg_category (Up Country vs Low Country)
+
+Top-Weighted Feature: farmer_price_filled
+Primary Weather Feed: reg_rain_lag_4 (4-week lag)
+
+Final Performance:
+------------------
+  R2 Score  : 0.9297
+  Accuracy  : 90.67%
+  MAPE      : 9.33%
+
+Features Used:
+--------------
+['year', 'week_sin', 'week_cos', 'veg_category_enc', 'vegetable_type_enc', 'retail_market_enc', 'farmer_price_filled', 'farmer_price_lag_1', 'farmer_price_lag_4', 'reg_rain_lag_4', 'retail_price_lag_1']

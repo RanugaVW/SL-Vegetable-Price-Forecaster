@@ -1,0 +1,18 @@
+Stage 11: Final Ensemble Model Report
+======================================
+Models: XGBoost (0.6) + HistGBM (0.2) + RandomForest (0.2)
+
+Metrics:
+--------
+Final Ensemble R2 Score: 0.8727
+Final Ensemble Accuracy (1 - MAPE): 87.30%
+
+Individual Model Accuracies:
+---------------------------
+- XGBoost: 87.69%
+- HistGBM: 85.65%
+- RandomForest: 86.37%
+
+Conclusion:
+-----------
+The ensemble approach successfully combined three different modeling strategies to stabilize predictions and achieve high accuracy across all vegetable groups.

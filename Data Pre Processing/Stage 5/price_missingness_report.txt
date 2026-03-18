@@ -1,0 +1,21 @@
+Price Missingness Report
+==========================
+
+Stage 4 Dataset (Current):
+--------------------------
+Total Rows: 61,152
+Non-Null Price Cells: 57,866
+Missing Price Cells: 3,286
+Missing Percentage (Stage 4): 5.37%
+
+Stage 1 Dataset (Original Raw Data):
+------------------------------------
+Total Rows in Stage 1: 746,304
+Total Non-Null Prices in Stage 1: 549,940
+
+Comparison (Relative to Stage 1):
+---------------------------------
+Missing Price Cells in Stage 4 Compared to ALL Non-Null Prices in Stage 1: 0.60%
+(This shows what percentage of all available price data is 'missing' in your final combined dataset)
+
+Note: Most of the missing values in Stage 4 were likely already missing in Stage 1 for those specific Year-Week-Location-Vegetable combinations.

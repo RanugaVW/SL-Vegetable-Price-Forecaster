@@ -1,0 +1,76 @@
+
+================================================================================
+     AFTER LINEAR INTERPOLATION — MISSING VALUE SUMMARY
+     Generated: 2026-03-18 23:53:00
+     File: Calculated_Retail_Producer_Prices.csv
+================================================================================
+
+IMPUTATION METHOD
+  Method        : Linear Interpolation (time-series, per group)
+  Group by      : Retail Market + Vegetable
+  Sorted by     : Year, Week Number
+  Max gap limit : 4 consecutive missing weeks
+  Remainder     : Gaps > 4 weeks left as NaN (unreliable to impute)
+
+--------------------------------------------------------------------------------
+OVERALL SUMMARY
+--------------------------------------------------------------------------------
+  Total Rows         :     61,152
+  Before Imputation  :
+    Missing Values   :      4,643
+    Missing %        :       7.59%
+  After Imputation   :
+    Filled Values    :      2,286
+    Remaining Missing:      2,357
+    Missing %        :       3.85%
+  Reduction          :       3.74% points improvement
+
+--------------------------------------------------------------------------------
+REMAINING MISSING % BY VEGETABLE (after interpolation)
+--------------------------------------------------------------------------------
+  Vegetable              | Remaining Count           | Missing %
+  -----------------------------------------------------------------
+  ASH PLANTAINS          | Remaining Missing:   198 /  5096 |   3.89%
+  BEETROOT               | Remaining Missing:     0 /  5096 |   0.00%
+  BRINJALS               | Remaining Missing:     0 /  5096 |   0.00%
+  CABBAGE                | Remaining Missing:     0 /  5096 |   0.00%
+  CARROT                 | Remaining Missing:     0 /  5096 |   0.00%
+  GREEN BEANS            | Remaining Missing:   510 /  5096 |  10.01%
+  GREEN CHILLIES         | Remaining Missing:    12 /  5096 |   0.24%
+  LADIES FINGERS         | Remaining Missing:    62 /  5096 |   1.22%
+  LEEKS                  | Remaining Missing:     0 /  5096 |   0.00%
+  PUMPKIN                | Remaining Missing:     0 /  5096 |   0.00%
+  SNAKE GOURD            | Remaining Missing:    21 /  5096 |   0.41%
+  TOMATOES               | Remaining Missing:  1554 /  5096 |  30.49%
+
+--------------------------------------------------------------------------------
+REMAINING MISSING % BY RETAIL MARKET (after interpolation)
+--------------------------------------------------------------------------------
+  Retail Market          | Remaining Count           | Missing %
+  -----------------------------------------------------------------
+  Anuradhapura           | Remaining Missing:   472 /  4368 |  10.81%
+  Badulla                | Remaining Missing:    51 /  4368 |   1.17%
+  Colombo                | Remaining Missing:    51 /  4368 |   1.17%
+  Dambulla               | Remaining Missing:    51 /  4368 |   1.17%
+  Embilipitiya           | Remaining Missing:   262 /  4368 |   6.00%
+  Hambanthota            | Remaining Missing:   262 /  4368 |   6.00%
+  Kaluthara              | Remaining Missing:    51 /  4368 |   1.17%
+  Kandy                  | Remaining Missing:    51 /  4368 |   1.17%
+  Kurunegala             | Remaining Missing:     0 /  4368 |   0.00%
+  Mathara                | Remaining Missing:    51 /  4368 |   1.17%
+  Meegoda                | Remaining Missing:    51 /  4368 |   1.17%
+  Nuwaraeliya            | Remaining Missing:   106 /  4368 |   2.43%
+  Puttalam               | Remaining Missing:   426 /  4368 |   9.75%
+  Thambuththegama        | Remaining Missing:   472 /  4368 |  10.81%
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+  - TOMATOES and GREEN BEANS retain higher missing % due to long consecutive
+    gaps in producer market data that exceed the 4-week interpolation limit.
+  - These remaining NaN values should be handled downstream (e.g., model-level
+    handling or excluded from specific analyses).
+
+================================================================================
+                               END OF REPORT
+================================================================================

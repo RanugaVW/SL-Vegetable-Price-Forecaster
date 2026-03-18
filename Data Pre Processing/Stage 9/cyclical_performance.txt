@@ -1,0 +1,14 @@
+Stage 9: Cyclical Encoding Report
+===============================
+Features Type: Weekly Sine/Cosine Waves
+
+Metrics:
+--------
+R2 Score: 0.8746
+Accuracy (1 - MAPE): 87.38%
+
+Comparison vs Stage 7:
+----------------------
+Baseline Accuracy: 87.57%
+Cyclical Accuracy: 87.38%
+Net Change: -0.1880%

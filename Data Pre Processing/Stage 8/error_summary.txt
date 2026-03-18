@@ -1,0 +1,29 @@
+Stage 8: Error Analysis Report
+==============================
+
+Top 5 Highest Error Vegetables:
+------------------------------
+vegetable_type
+TOMATOES          18.493066
+GREEN CHILLIES    16.268534
+GREEN BEANS       15.573982
+BRINJALS          13.763548
+PUMPKIN           12.767199
+
+Top 5 Lowest Error Vegetables (Most Stable):
+------------------------------------------
+vegetable_type
+BEETROOT          11.121573
+LEEKS             11.009140
+LADIES FINGERS    10.523563
+SNAKE GOURD       10.166318
+ASH PLANTAINS      6.695309
+
+Highest Error Locations:
+-----------------------
+location
+Hambanthota        14.737959
+Thambuththegama    14.575506
+Embilipitiya       13.844530
+
+Average MAPE across all groups: 12.48%

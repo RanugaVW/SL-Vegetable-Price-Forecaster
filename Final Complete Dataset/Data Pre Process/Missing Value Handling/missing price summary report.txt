@@ -1,0 +1,70 @@
+
+================================================================================
+         MISSING PRICE SUMMARY REPORT
+         Generated: 2026-03-18 23:43:44
+================================================================================
+
+--------------------------------------------------------------------------------
+1. COMBINED DATASET (Combined_data.csv) - Retail Price Missing Summary
+--------------------------------------------------------------------------------
+  Note: farmer_price was removed from Combined_data.csv and reconstructed
+  as mean_farmer_price in Calculated_Retail_Producer_Prices.csv (see Section 2).
+
+  Column: retail_price
+  Total Rows:         61,152
+  Missing Values:          0
+  Missing %:            0.00%
+
+--------------------------------------------------------------------------------
+2. CALCULATED FARMER PRICES (Calculated_Retail_Producer_Prices.csv)
+   mean_farmer_price = average of Primary & Secondary Producer Market prices
+--------------------------------------------------------------------------------
+  Total Rows:         61,152
+  Non-missing:        56,509
+  Missing Values:      4,643
+  Missing %:            7.59%
+  Retail Markets:         14
+  Vegetables:             12
+  Year Range:     2013 - 2019
+
+--------------------------------------------------------------------------------
+3. MISSING % BY VEGETABLE (mean_farmer_price)
+--------------------------------------------------------------------------------
+  Vegetable              | Count                  | Missing %
+  --------------------------------------------------------------
+  ASH PLANTAINS          | Missing:   444 /  5096 |   8.71%
+  BEETROOT               | Missing:    84 /  5096 |   1.65%
+  BRINJALS               | Missing:   112 /  5096 |   2.20%
+  CABBAGE                | Missing:    54 /  5096 |   1.06%
+  CARROT                 | Missing:    74 /  5096 |   1.45%
+  GREEN BEANS            | Missing:  1080 /  5096 |  21.19%
+  GREEN CHILLIES         | Missing:   220 /  5096 |   4.32%
+  LADIES FINGERS         | Missing:   267 /  5096 |   5.24%
+  LEEKS                  | Missing:   134 /  5096 |   2.63%
+  PUMPKIN                | Missing:   181 /  5096 |   3.55%
+  SNAKE GOURD            | Missing:   245 /  5096 |   4.81%
+  TOMATOES               | Missing:  1748 /  5096 |  34.30%
+
+--------------------------------------------------------------------------------
+4. MISSING % BY RETAIL MARKET (mean_farmer_price)
+--------------------------------------------------------------------------------
+  Retail Market          | Count                  | Missing %
+  --------------------------------------------------------------
+  Anuradhapura           | Missing:   779 /  4368 |  17.83%
+  Badulla                | Missing:   213 /  4368 |   4.88%
+  Colombo                | Missing:   182 /  4368 |   4.17%
+  Dambulla               | Missing:   172 /  4368 |   3.94%
+  Embilipitiya           | Missing:   362 /  4368 |   8.29%
+  Hambanthota            | Missing:   362 /  4368 |   8.29%
+  Kaluthara              | Missing:   153 /  4368 |   3.50%
+  Kandy                  | Missing:   172 /  4368 |   3.94%
+  Kurunegala             | Missing:   144 /  4368 |   3.30%
+  Mathara                | Missing:   155 /  4368 |   3.55%
+  Meegoda                | Missing:   182 /  4368 |   4.17%
+  Nuwaraeliya            | Missing:   309 /  4368 |   7.07%
+  Puttalam               | Missing:   679 /  4368 |  15.54%
+  Thambuththegama        | Missing:   779 /  4368 |  17.83%
+
+================================================================================
+                               END OF REPORT
+================================================================================

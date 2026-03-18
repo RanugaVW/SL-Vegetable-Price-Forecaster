@@ -1,0 +1,16 @@
+Stage 10: Dynamic Lag Selection Report
+======================================
+Extended Feature: 8-Week Lags for Weather and Price
+
+Metrics:
+--------
+R2 Score: 0.8727 (Change vs Stage 9: -0.0019)
+Accuracy (1 - MAPE): 87.69%
+
+Top 5 Feature Importances:
+---------------------------
+- price_lag_1: 0.8237
+- reg_rain_lag_4: 0.0209
+- price_lag_2: 0.0199
+- reg_temp_lag_8: 0.0178
+- week_cos: 0.0114

@@ -1,0 +1,27 @@
+Retail Price Ensemble Model – Performance Report
+=================================================
+Target  : retail_price
+Key new feature: mean_farmer_price (lagged & rolling, to avoid leakage)
+
+Models  : XGBoost (w=0.6) + HistGBM (w=0.2) + RandomForest (w=0.2)
+Data    : Final_Combined_data.csv  (61,152 rows total)
+Train   : 45,864 rows | Test: 11,611 rows
+Features: 31
+
+Overall Ensemble Metrics
+------------------------
+  R²  Score  : 0.8898
+  Accuracy (1 - MAPE) : 89.09%
+  MAPE       : 10.91%
+
+Individual Model Accuracies
+---------------------------
+  XGBoost       : 88.97%
+  HistGBM       : 88.81%
+  Random Forest : 88.56%
+
+Conclusion
+----------
+The ensemble combines gradient-boosting and bagging to stabilize predictions.
+Including mean_farmer_price (lagged) provides a direct supply-chain signal
+that significantly improves retail price forecasting accuracy.

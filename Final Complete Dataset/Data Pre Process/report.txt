@@ -1,0 +1,38 @@
+================================================================================
+Weekly Producer Vegetable Prices - Missing Data Analysis Report
+================================================================================
+
+This report details the missing value (blank price) percentages at both stages 
+of the dataset preparation process.
+
+1. RAW EXCEL DATASET: 'weekly_producer_vegetable_all_location(2008-2024).xlsx'
+--------------------------------------------------------------------------------
+Looking strictly at the raw dataset before any location or vegetable filtering:
+- Total valid price cells (W1 to W52 for all documented rows): 114,036
+- Missing (blank) price cells: 42,260
+- Data Missing Percentage: 37.06%
+
+*Note: The raw spreadsheet only lists a vegetable for a particular location if 
+there was actually data recorded for it during that year. It inherently skips 
+many potential location/vegetable pairings that had no activity.
+
+
+2. GENERATED LONG-FORMAT CSV (FILTERED & EXPANDED)
+--------------------------------------------------------------------------------
+Target parameters: 
+- Time period: 2013-w1 to 2019-w52 (7 years, 364 weeks)
+- Locations: 14 target locations
+- Vegetables: 12 target vegetables
+
+To ensure a continuous and robust time-series structure, a fully dense mathematical 
+grid was generated mapping *every single week* to *every location* and *every vegetable*. 
+Prices were merged in only where they existed historically.
+- Total structural combinations (364 weeks * 14 locations * 12 vegetables): 61,152 rows
+- Missing (blank) prices over this theoretically perfect 7-year grid: 47,563 rows
+- Valid prices historically found: 13,589 rows
+- Data Missing Percentage: 77.78%
+
+*Conclusion: The significantly higher 77.78% sparsity in the final output is 
+mostly because the script systematically generated empty structural placeholders 
+for non-existent/unreported historic market movements to ensure a consistent size 
+(61,152) across every time step in the time-series model.

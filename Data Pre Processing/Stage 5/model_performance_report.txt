@@ -1,0 +1,29 @@
+XGBoost Price Prediction Report
+================================
+
+Metrics:
+--------
+R2 Score: 0.8628
+RMSE: 36.15
+MAPE (Mean Absolute Percentage Error): 12.78%
+Accuracy (1 - MAPE): 87.22%
+
+Model Parameters:
+-----------------
+Max Depth: 6
+Learning Rate: 0.05
+N Estimators: 1000
+Best Iteration: 83
+
+Top 10 Feature Importances:
+---------------------------
+- price_lag_1: 0.4994
+- price_lag_2: 0.2199
+- price_rolling_mean_4: 0.1700
+- rain_sum_lag_4: 0.0120
+- rain_sum_lag_3: 0.0111
+- mean_apparent_temperature_lag_4: 0.0106
+- mean_apparent_temperature_lag_3: 0.0074
+- lanka_auto_diesel_price: 0.0071
+- price_lag_4: 0.0068
+- usd_exchange_rate: 0.0067
