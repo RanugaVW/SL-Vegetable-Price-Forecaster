@@ -1,0 +1,26 @@
+Yala Season - Advanced XGBoost + LightGBM Ensemble - DEEP OPTUNA TUNED
+===========================================================
+Model built from: Yala_data.csv 
+Target  : np.log1p(retail_price) -> Expm1 inverted logic
+Optuna Trials: 20 per algorithm + 30 for Weight blending
+
+Tuned Hyperparameters
+--------------------
+  XGBoost  : {'n_estimators': 645, 'learning_rate': 0.0077990570054522965, 'max_depth': 5, 'subsample': 0.7052265927085384, 'colsample_bytree': 0.6119086488206364, 'min_child_weight': 10, 'reg_alpha': 2.1401667204211714e-05, 'reg_lambda': 0.02591830414071282}
+  LightGBM : {'n_estimators': 921, 'learning_rate': 0.008423803637498008, 'max_depth': 6, 'num_leaves': 118, 'subsample': 0.6950068783988083, 'colsample_bytree': 0.801994483853516, 'min_child_samples': 29, 'reg_alpha': 2.0223662430704643e-05, 'reg_lambda': 0.0036204913480683072}
+
+Ensemble Blending
+-----------------
+  XGBoost Weight : 0.3531
+  LightGBM Weight: 0.6469
+
+Overall Ensemble Metrics
+------------------------
+  R2  Score              : 0.9420
+  Accuracy (1 - MAPE)    : 90.39%
+  MAPE                   : 9.61%
+
+Individual Accuracies
+---------------------
+  XGBoost Accuracy       : 90.27%
+  LightGBM Accuracy      : 90.35%

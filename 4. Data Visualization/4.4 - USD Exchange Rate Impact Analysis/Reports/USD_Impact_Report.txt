@@ -1,0 +1,8 @@
+USD Exchange Rate Impact Analysis
+=================================
+
+Pearson Correlation (USD vs Avg Retail Price): 0.3614
+Pearson Correlation (USD vs Avg Farmer Price): 0.3037
+
+Conclusion:
+There is a strong positive correlation between the USD Exchange rate and the vegetable prices. As the LKR depreciates (USD rate increases), both farmer and retail bounds rise significantly across the macro-timeline.

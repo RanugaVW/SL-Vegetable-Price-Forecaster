@@ -1,0 +1,21 @@
+XGBoost + LightGBM Ensemble - OPTUNA TUNED (No Diesel)
+===========================================================
+Model built from: Final_Combined_data.csv 
+Target  : retail_price
+Optuna Trials: 10 per algorithm
+
+Tuned Hyperparameters
+--------------------
+  XGBoost  : {'n_estimators': 666, 'learning_rate': 0.01383291855945484, 'max_depth': 5, 'subsample': 0.6966128733126443, 'colsample_bytree': 0.8994573704669218}
+  LightGBM : {'n_estimators': 521, 'learning_rate': 0.02958556649069663, 'max_depth': 7, 'num_leaves': 40, 'subsample': 0.8362667525230384, 'colsample_bytree': 0.7125330851470852}
+
+Overall Ensemble Metrics
+------------------------
+  R2  Score              : 0.9308
+  Accuracy (1 - MAPE)    : 90.79%
+  MAPE                   : 9.21%
+
+Individual Accuracies
+---------------------
+  XGBoost Accuracy       : 90.70%
+  LightGBM Accuracy      : 90.71%

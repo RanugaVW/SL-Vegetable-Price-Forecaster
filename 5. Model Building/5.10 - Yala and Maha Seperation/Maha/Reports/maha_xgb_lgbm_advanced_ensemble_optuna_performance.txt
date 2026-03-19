@@ -1,0 +1,26 @@
+Maha Season - Advanced XGBoost + LightGBM Ensemble - DEEP OPTUNA TUNED
+===========================================================
+Model built from: Maha_data.csv 
+Target  : np.log1p(retail_price) -> Expm1 inverted logic
+Optuna Trials: 20 per algorithm + 30 for Weight blending
+
+Tuned Hyperparameters
+--------------------
+  XGBoost  : {'n_estimators': 918, 'learning_rate': 0.01820198736990864, 'max_depth': 4, 'subsample': 0.8956163918640037, 'colsample_bytree': 0.5175826931352789, 'min_child_weight': 2, 'reg_alpha': 0.06979575661743337, 'reg_lambda': 0.06383355488678785}
+  LightGBM : {'n_estimators': 985, 'learning_rate': 0.013174234564047942, 'max_depth': 7, 'num_leaves': 91, 'subsample': 0.8169795407320558, 'colsample_bytree': 0.6461999216788606, 'min_child_samples': 39, 'reg_alpha': 0.9448331357783958, 'reg_lambda': 5.684124617640009}
+
+Ensemble Blending
+-----------------
+  XGBoost Weight : 0.5259
+  LightGBM Weight: 0.4741
+
+Overall Ensemble Metrics
+------------------------
+  R2  Score              : 0.9210
+  Accuracy (1 - MAPE)    : 90.47%
+  MAPE                   : 9.53%
+
+Individual Accuracies
+---------------------
+  XGBoost Accuracy       : 90.39%
+  LightGBM Accuracy      : 90.37%

@@ -1,0 +1,22 @@
+XGBoost + LightGBM Ensemble - OPTUNA TUNED (No USD)
+===========================================================
+Model built from: Final_Combined_data.csv 
+Target  : retail_price
+Optuna Trials: 10 per algorithm
+Removed Feature: usd_exchange_rate
+
+Tuned Hyperparameters
+--------------------
+  XGBoost  : {'n_estimators': 525, 'learning_rate': 0.016732549056518612, 'max_depth': 6, 'subsample': 0.6131333715697894, 'colsample_bytree': 0.7367075256851274}
+  LightGBM : {'n_estimators': 651, 'learning_rate': 0.016220058325171025, 'max_depth': 8, 'num_leaves': 60, 'subsample': 0.718078100798369, 'colsample_bytree': 0.8199768104722153}
+
+Overall Ensemble Metrics
+------------------------
+  R2  Score              : 0.9309
+  Accuracy (1 - MAPE)    : 90.78%
+  MAPE                   : 9.22%
+
+Individual Accuracies
+---------------------
+  XGBoost Accuracy       : 90.72%
+  LightGBM Accuracy      : 90.75%
