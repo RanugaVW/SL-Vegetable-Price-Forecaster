@@ -30,6 +30,8 @@ During hyperparameter tuning and feature selection for our XGBoost and LightGBM 
 
 Because of this weak visual correlation, we hypothesized that removing the Diesel Price feature (`lanka_auto_diesel_price`) might simplify the model without hurting performance. However, **when we removed the diesel feature and ran Optuna tuning, our overall model accuracy decreased.**
 
+![Macroeconomic Indicators vs Retail & Farmer Prices: Beetroot](./4.%20Data%20Visualization/USD_Diesel_Correlation/Charts/BEETROOT_trends.png)
+
 ### Why does a feature with weak linear correlation improve our predictive power so much?
 
 Tree-based models are uniquely positioned to extract value from features that linear models would discard. There are three primary reasons why XGBoost and LightGBM benefit significantly from the Diesel Price data:
