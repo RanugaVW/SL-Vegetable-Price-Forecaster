@@ -133,7 +133,29 @@ By analyzing *why* the algorithm predicted a massive price difference, stakehold
 
 ---
 
-## 7. Conclusion: Solving a National-Level Economic Enigma
+## 7. Model Validation from a Completely Different Economic Regime (2024)
+
+While our primary model validation was conducted by temporally splitting the unified dataset from 2013 to 2019, achieving ~90.8% accuracy (0.92 R2), we sought to rigorously test the model's true generalizability against unprecedented "concept drift." To perform deeper analysis and robust model validation, we evaluated our model against a completely unseen, out-of-time dataset from **2024**.
+
+Between 2018 and 2024, Sri Lanka experienced a severe macroeconomic crisis characterized by hyperinflation, causing a massive, irreversible baseline shift in structural pricing. Testing the historical model on these new bounds revealed an expected but insightful drop in performance:
+* **2024 Unseen Data R2 Score:** 0.7336 
+* **2024 Unseen Data Accuracy (1 - MAPE):** 85.96%
+
+![Scatter Accuracy on 2024 Validation Test Data](./5.%20Model%20Building/5.9%20-%20Model%20Validation/Datasets/Scatter_2024_Test_Accurate.png)
+
+![Validation Time-Series Tracking for 2024: Beetroot](./5.%20Model%20Building/5.9%20-%20Model%20Validation/Datasets/TimeSeries_2024_Test_BEETROOT.png)
+
+This performance degradation from ~91% down to ~86% highlights that while the model successfully understands the *relative* seasonal and climatic momentum of price shifts, tree-based models structurally struggle to blindly extrapolate into absolute numerical ranges they have never seen before (i.e., a tomato baseline moving from 100 LKR to 400 LKR permanently). 
+
+To bridge this specific macroeconomic gap and return the 2024 predictions back to the core >90% accuracy bound, we intend to integrate the following strategic adjustments:
+
+* **The "Inflation-Adjustment" Feature Strategy:** Currently, decision trees struggle with extreme absolute scale shifts. To resolve this, we can divide the historical `retail_price` by the `lanka_auto_diesel_price` (or an equivalent USD exchange rate offset) to model the "Real Adjusted Price." When making out-of-time predictions for 2024, we multiply the output back by the new 2024 diesel scale, mathematically forcing the tree's outputs into the hyper-inflated bounds dynamically.
+* **Time-Decay Weighting Approach:** Instead of treating all historical data equally, we can retrain the models by strictly applying `sample_weight`. By allocating larger weights to 2017-2018 data and exponentially lower weights to 2013-2014 records, we force the algorithmic splits to inherently prioritize the most recent, inflated economic dynamics.
+* **Dynamic Threshold Recalibration:** Sudden inflationary shocks confuse built-in rolling features (e.g., `retail_price_roll_4`). To insulate the system, we can create a "Recent Shock" composite feature (tied to massive, sudden percentage changes in farmer prices). This dynamic feature would allow the ensemble mechanism to adjust XGBoost/LightGBM blend weights on the fly during drastic, real-time macro-economic disruptions.
+
+---
+
+## 8. Conclusion: Solving a National-Level Economic Enigma
 
 When this project was initially conceptualized alongside national agricultural institutions like HARTI, the problem was framed as exceptionally challenging, if not completely volatile. Because Sri Lanka's core commercial vegetable market operates entirely recursively—meaning these specific crop types are practically *never* imported from other countries to offset shortages—the retail prices are at the absolute mercy of localized hyper-volatility. Every local drought, every national fuel strike, and every domestic monsoon directly and permanently alters the price of food. 
 

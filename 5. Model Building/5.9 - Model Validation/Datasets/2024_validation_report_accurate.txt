@@ -1,0 +1,6 @@
+2024 Unseen Data Model Validation (Final Script Run)
+===================================
+Test Rows Evaluated: 6877
+R2 Score: 0.7336
+MAPE: 0.1404 (14.04%)
+Accuracy: 0.8596 (85.96%)

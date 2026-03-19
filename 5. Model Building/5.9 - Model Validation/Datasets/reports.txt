@@ -1,0 +1,18 @@
+Missing Values Report for 2024_dataset_complete.csv (After Dropping Nulls)
+Total Rows: 8181
+
+Year_Week                    0
+year                         0
+week                         0
+retail_market                0
+code                         0
+vegetable_type               0
+no_of_holidays               0
+vegetable_zone               0
+seasonality                  0
+lanka_auto_diesel_price      0
+mean_apparent_temperature    0
+rain_sum                     0
+usd_exchange_rate            0
+mean_farmer_price            0
+retail_price                 0
