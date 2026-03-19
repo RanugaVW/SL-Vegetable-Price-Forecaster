@@ -75,6 +75,8 @@ By preserving this "noise", the ensemble manages to achieve **~90.8% MAPE accura
 
 One of the most critical and mathematically challenging steps in our preprocessing pipeline was correctly aligning meteorological data with market prices. 
 
+![Pumpkin Rain Event (4-Week Lag Mapping)](./4.%20Data%20Visualization/4.3%20-%20Rain%20Lag%20Analysis/Charts/Line%20charts/Rain_Lag4_PUMPKIN.png)
+
 ### The Naive Trap
 A standard, naive approach to this problem would be to fetch the local weather data for the specific retail market location. For example, trying to predict the price of carrots at the Colombo retail market by looking at the rainfall in Colombo. **This approach is fundamentally flawed and virtually useless** because the commercial vegetables are not grown in the urban retail centers where they are sold. 
 
