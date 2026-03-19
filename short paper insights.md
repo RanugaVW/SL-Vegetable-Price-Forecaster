@@ -141,5 +141,9 @@ Running our finalized, tuned LightGBM & XGBoost ensemble architecture over our s
 * **R2 Validation Score:** 0.9281
 * **Overall Accuracy (1 - MAPE):** 90.84%
 
+![Scatter Accuracy on Test Data](./5.%20Model%20Building/5.8%20-%20Retail%20Price%20Ensemble%20Models/XGBoost%20%2B%20LightBGM/Charts/Scatter_Accuracy_Test_Data.png)
+
+![Validation Time-Series Tracking](./5.%20Model%20Building/5.8%20-%20Retail%20Price%20Ensemble%20Models/XGBoost%20%2B%20LightBGM/Charts/Validation_TimeSeries_Tracking.png)
+
 ### Final Thoughts
 We effectively proved that agricultural prices in an isolated national economy are not random. The ~91% accuracy threshold achieved by the ensemble model verifies that violent price spikes are highly predictable cascading events. It demonstrates that the gap between what farmers earn and what the public pays is mathematically governed by strict underlying laws of momentum, lagged biological weather trauma, and macroeconomic transport costs. Ultimately, this research provides a predictive blueprint capable of forecasting national food security risks weeks before they hit the retail markets.
