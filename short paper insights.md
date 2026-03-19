@@ -47,7 +47,9 @@ Tree-based models are uniquely positioned to extract value from features that li
 
 ## 3. Statistical Outliers and Noise Analysis
 
-To understand the dataset's volatility, calculating the Interquartile Range (IQR) on the complete 60,000+ row dataset reveals the extreme price spikes for each vegetable type.
+To understand the dataset's volatility, calculating the Interquartile Range (IQR) on the complete 60,000+ row dataset reveals the extreme price spikes for each vegetable type. By visually mapping these bounds, we can identify historical price shocks falling $1.5 \times \text{IQR}$ outside the standard distribution.
+
+![Master Boxplot for All Vegetables](./4.%20Data%20Visualization/4.4%20-%20Outlier%20Analysis/Charts/All_Vegetables_Boxplot_Master.png)
 
 ### How Many Outliers Exist?
 Based on our multi-year bounding box calculations, the overall noise and statistical outlier percentage is **exceedingly small**. Examples from the distribution:
