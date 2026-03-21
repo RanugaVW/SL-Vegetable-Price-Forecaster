@@ -11,9 +11,9 @@ Tuned Hyperparameters
 
 Overall Ensemble Metrics
 ------------------------
-  R2  Score              : 0.9306
-  Accuracy (1 - MAPE)    : 90.80%
-  MAPE                   : 9.20%
+  R2  Score              : 0.9281
+  Accuracy (1 - MAPE)    : 90.84%
+  MAPE                   : 9.16%
 
 Individual Accuracies
 ---------------------

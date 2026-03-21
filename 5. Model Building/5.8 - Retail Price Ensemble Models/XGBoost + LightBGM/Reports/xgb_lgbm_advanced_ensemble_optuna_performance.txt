@@ -6,21 +6,21 @@ Optuna Trials: 50 per algorithm + 30 for Weight blending
 
 Tuned Hyperparameters
 --------------------
-  XGBoost  : {'n_estimators': 696, 'learning_rate': 0.008536730075370693, 'max_depth': 6, 'subsample': 0.7774284177019496, 'colsample_bytree': 0.8237196511415166, 'min_child_weight': 3, 'reg_alpha': 0.00035373235282228635, 'reg_lambda': 0.05634686783765633}
-  LightGBM : {'n_estimators': 368, 'learning_rate': 0.01903146576277176, 'max_depth': 10, 'num_leaves': 125, 'subsample': 0.5249079172508202, 'colsample_bytree': 0.6816518347717966, 'min_child_samples': 14, 'reg_alpha': 4.1758270609022125e-05, 'reg_lambda': 2.81502207519279e-05}
+  XGBoost  : {'n_estimators': 876, 'learning_rate': 0.00819190436989011, 'max_depth': 6, 'subsample': 0.7652822079106122, 'colsample_bytree': 0.7262048553028914, 'min_child_weight': 9, 'reg_alpha': 1.7391368145293053e-06, 'reg_lambda': 2.629441405815358e-08}
+  LightGBM : {'n_estimators': 581, 'learning_rate': 0.013923152508847651, 'max_depth': 6, 'num_leaves': 71, 'subsample': 0.6981169548458899, 'colsample_bytree': 0.7273246742744683, 'min_child_samples': 25, 'reg_alpha': 6.205688650478069e-05, 'reg_lambda': 0.08890721233944927}
 
 Ensemble Blending
 -----------------
-  XGBoost Weight : 0.4683
-  LightGBM Weight: 0.5317
+  XGBoost Weight : 0.3715
+  LightGBM Weight: 0.6285
 
 Overall Ensemble Metrics
 ------------------------
-  R2  Score              : 0.9278
+  R2  Score              : 0.9274
   Accuracy (1 - MAPE)    : 90.83%
   MAPE                   : 9.17%
 
 Individual Accuracies
 ---------------------
-  XGBoost Accuracy       : 90.77%
-  LightGBM Accuracy      : 90.79%
+  XGBoost Accuracy       : 90.79%
+  LightGBM Accuracy      : 90.81%
