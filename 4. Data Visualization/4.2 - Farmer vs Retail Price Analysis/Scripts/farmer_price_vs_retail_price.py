@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -5,14 +7,14 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ── Config ─────────────────────────────────────────────────────────────────
-FILE      = r'C:\Users\Ranuga\Data Science Project\Final Complete Dataset\Data Pre Process\Combining DataSets\Final_Combined_data.csv'
+FILE      = r'C:\Users\Ranuga\Data Science Project\3. Data Preprocessing\3.7 - Combining Datasets\Outputs\Final_Combined_data.csv'
 SAVE_DIR  = r'C:\Users\Ranuga\Data Science Project\Final Complete Dataset\Data Visualizing'
 
-FARMER_COLOR = '#00d4ff'
-RETAIL_COLOR = '#ff6b6b'
-BG           = '#0f0f1a'
-PANEL_BG     = '#16213e'
-GRID_COLOR   = '#2a2a4a'
+FARMER_COLOR = '#007acc'
+RETAIL_COLOR = '#d32f2f'
+BG           = '#ffffff'
+PANEL_BG     = '#fdfdfd'
+GRID_COLOR   = '#e0e0e0'
 
 # ── Load & prepare ─────────────────────────────────────────────────────────
 df = pd.read_csv(FILE, na_values=['NaN'])
@@ -34,7 +36,7 @@ vegetables = sorted(weekly['vegetable_type'].unique())
 print(f"Loaded {len(df):,} rows | {len(vegetables)} vegetables | {df['date'].min().year}–{df['date'].max().year}")
 
 # ── 12 individual charts ───────────────────────────────────────────────────
-plt.style.use('dark_background')
+# plt.style.use('dark_background')
 
 for veg in vegetables:
     sub = weekly[weekly['vegetable_type'] == veg].copy()
@@ -53,17 +55,17 @@ for veg in vegetables:
     ax.xaxis.set_major_locator(mdates.YearLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     ax.xaxis.set_minor_locator(mdates.MonthLocator(bymonth=[4, 7, 10]))
-    ax.tick_params(axis='x', colors='#aaaaaa', labelsize=9)
-    ax.tick_params(axis='y', colors='#aaaaaa', labelsize=9)
+    ax.tick_params(axis='x', colors='#444444', labelsize=9)
+    ax.tick_params(axis='y', colors='#444444', labelsize=9)
     ax.grid(which='major', color=GRID_COLOR, lw=0.6, linestyle='--')
     ax.grid(which='minor', color=GRID_COLOR, lw=0.3, linestyle=':')
     for spine in ax.spines.values():
-        spine.set_edgecolor('#333355')
+        spine.set_edgecolor('#cccccc')
 
-    ax.set_title(veg, color='white', fontsize=13, fontweight='bold', pad=10)
-    ax.set_xlabel('Year', color='#888888', fontsize=9)
-    ax.set_ylabel('Price (LKR / kg)', color='#888888', fontsize=9)
-    ax.legend(facecolor='#1a1a2e', edgecolor='#444466', labelcolor='white',
+    ax.set_title(veg, color='#333333', fontsize=13, fontweight='bold', pad=10)
+    ax.set_xlabel('Year', color='#666666', fontsize=9)
+    ax.set_ylabel('Price (LKR / kg)', color='#666666', fontsize=9)
+    ax.legend(facecolor='#ffffff', edgecolor='#cccccc', labelcolor='#333333',
               fontsize=9, loc='upper left')
 
     plt.tight_layout()
@@ -76,7 +78,7 @@ for veg in vegetables:
 # ── Summary 4×3 grid ──────────────────────────────────────────────────────
 fig, axes = plt.subplots(4, 3, figsize=(20, 18), facecolor=BG)
 fig.suptitle('Mean Farmer Price vs Retail Price  ·  2013 – 2019',
-             color='white', fontsize=15, fontweight='bold', y=1.01)
+             color='#333333', fontsize=15, fontweight='bold', y=1.01)
 
 for i, veg in enumerate(vegetables):
     ax  = axes.flatten()[i]
@@ -90,14 +92,14 @@ for i, veg in enumerate(vegetables):
 
     ax.xaxis.set_major_locator(mdates.YearLocator(2))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("'%y"))
-    ax.tick_params(colors='#aaaaaa', labelsize=7)
+    ax.tick_params(colors='#444444', labelsize=7)
     ax.grid(color=GRID_COLOR, lw=0.4, linestyle='--')
-    ax.set_title(veg, color='white', fontsize=9, fontweight='bold', pad=5)
-    ax.set_ylabel('LKR/kg', color='#888', fontsize=7)
-    ax.legend(facecolor='#1a1a2e', labelcolor='white', fontsize=7,
-              loc='upper left', edgecolor='#444466')
+    ax.set_title(veg, color='#333333', fontsize=9, fontweight='bold', pad=5)
+    ax.set_ylabel('LKR/kg', color='#666', fontsize=7)
+    ax.legend(facecolor='#ffffff', labelcolor='#333333', fontsize=7,
+              loc='upper left', edgecolor='#cccccc')
     for spine in ax.spines.values():
-        spine.set_edgecolor('#333355')
+        spine.set_edgecolor('#cccccc')
 
 plt.tight_layout()
 grid_path = rf'{SAVE_DIR}\farmer_vs_retail_all_vegetables.png'
