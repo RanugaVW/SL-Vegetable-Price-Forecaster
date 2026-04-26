@@ -1,26 +1,27 @@
-Advanced XGBoost + LightGBM Ensemble - DEEP OPTUNA TUNED
+Advanced XGBoost + LightGBM Ensemble - DEEP OPTUNA TUNED (WITH MARKET CLUSTERS)
 ===========================================================
 Model built from: Final_Combined_data.csv 
 Target  : np.log1p(retail_price) -> Expm1 inverted logic
 Optuna Trials: 50 per algorithm + 30 for Weight blending
+Feature Injections: Market Clustering (4 clusters) & Cluster Roll Averages
 
 Tuned Hyperparameters
 --------------------
-  XGBoost  : {'n_estimators': 876, 'learning_rate': 0.00819190436989011, 'max_depth': 6, 'subsample': 0.7652822079106122, 'colsample_bytree': 0.7262048553028914, 'min_child_weight': 9, 'reg_alpha': 1.7391368145293053e-06, 'reg_lambda': 2.629441405815358e-08}
-  LightGBM : {'n_estimators': 581, 'learning_rate': 0.013923152508847651, 'max_depth': 6, 'num_leaves': 71, 'subsample': 0.6981169548458899, 'colsample_bytree': 0.7273246742744683, 'min_child_samples': 25, 'reg_alpha': 6.205688650478069e-05, 'reg_lambda': 0.08890721233944927}
+  XGBoost  : {'n_estimators': 814, 'learning_rate': 0.009358540527889423, 'max_depth': 6, 'subsample': 0.8206941028481096, 'colsample_bytree': 0.9981709389401007, 'min_child_weight': 6, 'reg_alpha': 1.2135564596763816e-05, 'reg_lambda': 0.00017054898002921966}
+  LightGBM : {'n_estimators': 392, 'learning_rate': 0.013907746695167537, 'max_depth': 8, 'num_leaves': 61, 'subsample': 0.5844644704573289, 'colsample_bytree': 0.8912155325476948, 'min_child_samples': 44, 'reg_alpha': 0.000598427592963586, 'reg_lambda': 3.85484856925179e-07}
 
 Ensemble Blending
 -----------------
-  XGBoost Weight : 0.3715
-  LightGBM Weight: 0.6285
+  XGBoost Weight : 0.5172
+  LightGBM Weight: 0.4828
 
 Overall Ensemble Metrics
 ------------------------
-  R2  Score              : 0.9274
-  Accuracy (1 - MAPE)    : 90.83%
-  MAPE                   : 9.17%
+  R2  Score              : 0.9280
+  Accuracy (1 - MAPE)    : 90.79%
+  MAPE                   : 9.21%
 
 Individual Accuracies
 ---------------------
-  XGBoost Accuracy       : 90.79%
-  LightGBM Accuracy      : 90.81%
+  XGBoost Accuracy       : 90.76%
+  LightGBM Accuracy      : 90.76%
